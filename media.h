@@ -7,6 +7,7 @@
 #include <QMediaPlaylist>
 #include <QVideoWidget>
 #include <QSlider>
+
 namespace Ui {
 class Media;
 }
@@ -24,6 +25,7 @@ public:
     void startplay(QString path);
     void controlvoice();
     void returnparent();
+
 private:
     Ui::Media *ui;
     qint64 duration;

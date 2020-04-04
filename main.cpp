@@ -1,6 +1,7 @@
 ﻿#include "widget.h"
 #include "window.h"
 #include <QApplication>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -11,6 +12,8 @@ int main(int argc, char *argv[])
     SendMessageToDesktop();
 
       w.show();
+
+
 //      m.show();
     return a.exec();
 }
