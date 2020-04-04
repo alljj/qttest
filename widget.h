@@ -5,7 +5,7 @@
 //#include <gif.h>
 #include <media.h>
 #include <QCloseEvent>
-
+#include <QStringList>
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
 QT_END_NAMESPACE
@@ -19,7 +19,7 @@ public:
     ~Widget();
      HWND desktopWnd;
      void dealsig();
-
+     QString getfileNames(const QString &path);
 private slots:
      void on_pushButton_clicked();
 
@@ -27,12 +27,17 @@ private slots:
      void closeEvent(QCloseEvent *event);
      void on_pushButton_3_clicked();
 
+     void on_pushButton_jpg1_clicked();
+
 private:
     Ui::Widget *ui;
 //    QSettings *wallpaper;
      QString paths;
+     QString jpg1;
+     QString last_1;
 //      gif v;
       Media m;
+
 
 
 };

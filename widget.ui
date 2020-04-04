@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>484</height>
+    <width>957</width>
+    <height>336</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>100</y>
+     <x>840</x>
+     <y>40</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -29,8 +29,8 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>210</y>
+     <x>840</x>
+     <y>90</y>
      <width>93</width>
      <height>28</height>
     </rect>
@@ -42,14 +42,27 @@
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>390</x>
      <y>290</y>
-     <width>131</width>
+     <width>111</width>
      <height>28</height>
     </rect>
    </property>
    <property name="text">
     <string>打开音量控制</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_jpg1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>191</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
