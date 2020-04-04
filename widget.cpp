@@ -58,6 +58,7 @@ void Widget::on_pushButton_2_clicked()
 
       SetParent((HWND)m.videowidget.winId(),desktopWnd);
     }
+
    m.videowidget.hide();
    m.startplay(paths);
    showMinimized();
@@ -96,6 +97,7 @@ void Widget::on_pushButton_jpg1_clicked()
    {
       paths = getfileNames(last_1);
       ui->pushButton_2->setEnabled(true);
+
       qDebug()<<paths;
       return ;
    }
@@ -112,7 +114,7 @@ void Widget::on_pushButton_jpg1_clicked()
       ui->pushButton_jpg1->setStyleSheet(QString("QPushButton{border-image:url(%1)}").arg(last_1));
      }
       ui->pushButton_jpg1->setStyleSheet(QString("QPushButton{border-image:url(%1)}").arg(last_1));
-
+     ui->pushButton_2->setEnabled(false);
    }
    if(res == QMessageBox::Cancel)
    {
@@ -135,7 +137,7 @@ QString Widget::getfileNames(const QString &path)
 
        QString str1 = infolist.join("");
 
-       qDebug()<<str1;
+       qDebug()<<"138__"<<str1;
 
        QString str = dir.canonicalPath();
 
