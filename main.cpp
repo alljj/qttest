@@ -1,19 +1,11 @@
-﻿#include "widget.h"
-#include "window.h"
+#include "mainwindow.h"
 #include <QApplication>
-
+#include "drawing.h"
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Widget w;
+    MainWindow w;
+    w.show();
 
-    w.desktopWnd = findDesktopIconWnd();
-
-    SendMessageToDesktop();
-
-      w.show();
-
-
-//      m.show();
     return a.exec();
 }
